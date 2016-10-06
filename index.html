@@ -29,7 +29,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -45,16 +45,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" class="scroll">About</a>
                     </li>
                     <li>
-                        <a href="#research">Research</a>
+                        <a href="#research" class="scroll">Research</a>
                     </li>
                     <li>
-                        <a href="#cv">CV</a>
+                        <a href="#cv" class="scroll">CV</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" class="scroll">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,65 +76,178 @@
     <!-- Page Content -->
     <div class="container">
 
-        <hr class="featurette-divider">
 
+        <div class="buffer" id="about"></div>
+        <hr class="featurette-divider">
         <!-- First Featurette -->
-        <div class="featurette" id="about">
+        <div class="featurette">
             <!--<img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">-->
-            <h2 class="featurette-heading">About Me
-            </h2>
-            <img src="jacob-web.jpg" style="float: left; margin-right: 10px;" />
-            <p class="lead">I study the ways that system designs, particularly intelligent systems and socio-technical systems, influence users' decision making and behavior.
-            I am currently a Postdoctoral Research Fellow at the <a href="http://cbssm.med.umich.edu">Center for Bioethics and Social Sciences in Medicine at the University of Michigan</a> working with Dr. Brian Zikmund-Fisher studying and designing decision aids for health and medical decisions.
-            I completed my PhD in 2015 at the <a href="http://tism.msu.edu">Department of Media and Information at Michigan State University</a> studying under <a href="http://rickwash.net">Dr. Rick Wash</a>.
-            </p>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 class="featurette-heading">About Me</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <img src="jacob-web.jpg" style="float: left; margin-right: 10px;" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                <p class="lead">I study the ways that system designs, particularly intelligent systems and socio-technical systems, influence users' decision making and behavior.
+                I am currently a Postdoctoral Research Fellow at the <a href="http://cbssm.med.umich.edu">Center for Bioethics and Social Sciences in Medicine at the University of Michigan</a> working with Dr. Brian Zikmund-Fisher studying and designing decision aids for health and medical decisions.
+                I completed my PhD in 2015 at the <a href="http://tism.msu.edu">Department of Media and Information at Michigan State University</a> studying under <a href="http://rickwash.net">Dr. Rick Wash</a>.
+                </p>
+            </div>
+            <div class="row text-center">
+                <p>Last Updated: <span id="last-updated"></span></p>
+            </div>
         </div>
 
+        <div class="buffer" id="research"></div>
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
-        <div class="featurette" id="research">
+        <div class="featurette">
             <!--<img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">-->
             <h2 class="featurette-heading">Research
             </h2>
 
             <h3>Medical Test Result Visualization</h3>
-            <p>I currently work on an <a href="http://cbssm.med.umich.edu/what-we-do/research-projects/systematic-design-meaningful-presentations-medical-test-data-patients">AHRQ-funded grant</a>
+            <p class="lead">I currently work on an <a href="http://cbssm.med.umich.edu/what-we-do/research-projects/systematic-design-meaningful-presentations-medical-test-data-patients">AHRQ-funded grant</a>
             to design meaningful presentations of medical test results to patients that can be displayed in online patient portals.</p>
-            <p><a href="papers/test_result_chi_poster_final.pdf" id="test-data-chi-lbw">Is This Good or Bad? Redesigning Visual Displays of Medical Test Results in Patient Portals to Provide Context and Meaning (CHI'16 Extended Abstracts)</a></p>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/test_result_chi_poster_final.pdf" id="test-data-chi-lbw">
+                        <img src="images/test-data-graphic.jpg"  />
+                        <p class="text-center">Is This Good or Bad? Redesigning Visual Displays of Medical Test Results in Patient Portals to Provide Context and Meaning (CHI'16 Extended Abstracts)</a></p>
+                    </div>
+                </div>
+            </div>
 
             <h3>Colonoscopy Screening Decision Aid</h3>
-            <p>Working with Dr. Sameer Saini at the Ann Arbor VA, I have designed and developed an online decision aid to help clinicians decide whether the benefits of a colonoscopy are worth the risks for a patient given some individual characteristics. This aid can help clinicians make more personalized decisions about screening and highlights some particular examples of patients whose risk and benefit from screening runs counterintuitively from established guidelines.</p>
+            <p class="lead">Working with Dr. Sameer Saini at the Ann Arbor VA, I have designed and developed an online decision aid to help clinicians decide whether the benefits of a colonoscopy are worth the risks for a patient given some individual characteristics. This aid can help clinicians make more personalized decisions about screening and highlights some particular examples of patients whose risk and benefit from screening runs counterintuitively from established guidelines.</p>
             <p>An alpha version of this tool can be seen at <a href="http://das.med.umich.edu/screening/screening.html" target="_blank">http://das.medu.umich.edu/screening/screening.html</a></p>
 
             <h3>Intelligent Decision Aids</h3>
-            <p>My dissertation research looked at the ways that the design of intelligent decision aids (decision aids that use artificial intelligence or similarly sophisticated computation to make recommendations to decision makers) can create decision making biases.
+            <p class="lead">My dissertation research looked at the ways that the design of intelligent decision aids (decision aids that use artificial intelligence or similarly sophisticated computation to make recommendations to decision makers) can create decision making biases.
             I found that the customizability of the system, the transparency, and users expectations of its efficacy can cause users to agree with system recommendations regardless of what recommendations are given.</p>
-            <p><a href="papers/customizing.pdf" id="heterogeneity">Heterogeneity in Customization of Recommender Systems By Users With Homogenous Preferences (CHI '16)</a></p>
-            <p><a href="papers/dissertation.pdf" id="dissertation">Decision Biases in Agreement with Intelligent Decision Aids (Dissertation)</a></p>
-            <p><a href="papers/fantasy.pdf" id="fantasy">Customization Bias in Decision Support Systems (CHI '14)</a></p>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/customizing.pdf" id="heterogeneity">
+                        <img src="images/hairball_p.png"  />
+                        <p class="text-center">Heterogeneity in Customization of Recommender Systems By Users With Homogenous Preferences (CHI '16)</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/dissertation.pdf" id="dissertation">
+                        <img src="images/er_custom_only.png"  />
+                        <p class="text-center">Decision Biases in Agreement with Intelligent Decision Aids (Dissertation)</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/fantasy.pdf" id="fantasy">
+                        <img src="images/winner_agreement.png"  />
+                        <p class="text-center">Customization Bias in Decision Support Systems (CHI '14)</a></p>
+                    </div>
+                </div>
+            </div>
             </div>
 
             <h3>Crowdfunding</h3>
-            <p>I have worked with <a href="http://rickwash.com">Rick Wash</a> to study how the design of crowdfunding platforms influences users' ability to coordinate their collective efforts and successfully fund projects.
+            <p class="lead">I have worked with <a href="http://rickwash.com">Rick Wash</a> to study how the design of crowdfunding platforms influences users' ability to coordinate their collective efforts and successfully fund projects.
             Our research has mainly involved controlled lab experiments that simulate crowds on a crowdfunding site, where we have found that the style of crowdfunding (All-or-nothing vs. Keep-it-all) and the timing of donations have important consequences for project outcomes.</p>
-            <p><a href="papers/spillover.pdf" id="spillover">Highly Successful Projects Inhibit Coordination on Crowdfunding Sites (CHI '16)</a></p>
-            <p><a href="papers/timing.pdf" id="timing">Don't Wait! How Timing Affects Coordination of Crowdfunding Donations (CSCW '15)</a></p>
-            <p><a href="papers/p38-wash.pdf" id="coordinate">Coordinating Donors on Crowdfunding Sites (CSCW '14)</a></p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/spillover.pdf" id="spillover">
+                        <img src="images/superstar.png"  />
+                        <p class="text-center">Highly Successful Projects Inhibit Coordination on Crowdfunding Sites (CHI '16)</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/timing.pdf" id="timing">
+                        <img src="images/timing.png"  />
+                        <p class="text-center">Don't Wait! How Timing Affects Coordination of Crowdfunding Donations (CSCW '15)</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/p38-wash.pdf" id="coordinate">
+                        <img src="images/round_summary.png"  />
+                        <p class="text-center">Coordinating Donors on Crowdfunding Sites (CSCW '14)</a></p>
+                    </div>
+                </div>
+            </div>
+
+
 
 
             <h3>Online Communities</h3>
-            <p>I have studied the design of Online Communities with my PhD advisor Rick Wash, where have found that early contributions to online communities set an expectation for newcomers about what is required, and that if new users do not see the existing content on a site they are likely to contribute more.
+            <p class="lead">I have studied the design of Online Communities with my PhD advisor Rick Wash, where have found that early contributions to online communities set an expectation for newcomers about what is required, and that if new users do not see the existing content on a site they are likely to contribute more.
             We have also found that communities should be designed to attract members rather than content, as communities such as WikiProjects on Wikipedia will have more long-term growth if they attract many new people rather than getting a smaller number of people to contribute more content.</p>
-            <p><a href="papers/wikiprojects.pdf" id="wikiprojects">Critical Mass of What? (ICWSM '14)</a></p>
-            <p><a href="papers/bootstrapping-paper-final.pdf" id="bootstrapping">Bootstrapping Wikis (CSCW '12)</a></p>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/wikiprojects.pdf" id="wikiprojects">
+                        <img src="images/wikiprojects.png"  />
+                        <p class="text-center"> Critical Mass of What? (ICWSM '14 paper)</p></a>
+                        <p class="text-center">
+                            <a href="papers/icswm_poster_final.pdf">(Accompanying Poster)</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/bootstrapping-paper-final.pdf" id="bootstrapping">
+                        <img src="images/bootstrapping.png"  />
+                        <p class="text-center">Bootstrapping Wikis (CSCW '12)</a></p>
+                    </div>
+                </div>
+            </div>
+
+
 
             <h3>Other projects</h3>
-            <p>Some other projects I have worked on have looked at the design of instant messaging and self-service kiosks, as well as some theoretical work about privacy concerns from targeted advertising and understanding how users determine the "source" of their interaction with a computer in an online environment.</p>
-            <p><a href="papers/p1965-wohn.pdf" id="privacy">Privacy Concerns Regarding Behavioral Advertising (CHI '15 Extended Abstracts)</a></p>
-            <p><a href="papers/source_orientation.pdf" id="source_orientation">Source Orientation (HFES '14)</a></p>
-            <p><a href="papers/real_time_text-GROUP.pdf" id="rtt">Real-Time Text and IM (GROUP '10)</a></p>
-            <p><a href="papers/Digital Photo Kiosk Evaluation.pdf" id="photo">Digital Photo Kiosk Evaluation (HFES '07)</a></p>
+            <p class="lead">Some other projects I have worked on have looked at the design of instant messaging and self-service kiosks, as well as some theoretical work about privacy concerns from targeted advertising and understanding how users determine the "source" of their interaction with a computer in an online environment.</p>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/p1965-wohn.pdf" id="privacy">
+                        <img src="images/privacy.png"  />
+                        <p class="text-center">Privacy Concerns Regarding Behavioral Advertising (CHI '15 Extended Abstracts)</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/source_orientation.pdf" id="source_orientation">
+                        <img src="images/source_distance.png"  />
+                        <p class="text-center">Source Orientation (HFES '14)</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/real_time_text-GROUP.pdf" id="rtt">
+                        <img src="images/rtt_screenshot.jpg"  />
+                        <p class="text-center">Real-Time Text and IM (GROUP '10)</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="papers/Digital Photo Kiosk Evaluation.pdf" id="photo">
+                        <img src="images/kiosk.png"  />
+                        <p class="text-center">Digital Photo Kiosk Evaluation (HFES '07)</a></p>
+                    </div>
+                </div>
+            </div>
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
@@ -160,7 +273,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Jacob Solomon 2015</p>
+                    <p>Copyright &copy; Jacob Solomon 2016</p>
                 </div>
             </div>
         </footer>
@@ -246,6 +359,7 @@
     </script>
     <!-- Google Analytics scrolling tracking -->
     <script src="js/jquery.scrolldepth.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.nicescroll/3.5.4/jquery.nicescroll.min.js"></script>
     <script>
         jQuery.scrollDepth({
             elements : [
@@ -257,6 +371,40 @@
             nonInteraction: false,
             pixelDepth: false,
         });
+    </script>
+    <script>
+    $('a.scroll').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+    </script>
+    <!-- last updated stuff -->
+    <script>
+        $(document).ready(function(){
+            var git_url = "https://api.github.com/repos/jacobsolomon15/jacobsolomon15.github.io";
+            $.ajax({
+                url: git_url,
+                dataType:'jsonp',
+                success: function(returndata){
+                    //var d = JSON.parse(returndata);
+                    var d = new Date(returndata.data.pushed_at).toLocaleDateString('en-us');
+
+                    // console.log(d);
+                    // var formatted = d.toLocaleDateString('en-us');
+                    $("#last-updated").html(d);
+
+                }
+            });
+        });
+
     </script>
 
 </body>
