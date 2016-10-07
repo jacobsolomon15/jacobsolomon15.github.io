@@ -12,7 +12,9 @@
     <title>Jacob Solomon -- HCI and Human Factors Engineering Researcher</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-social.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
@@ -45,16 +47,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about" class="scroll">About</a>
+                        <a href="#about" class="scroll tracking" id="about-nav-link">About</a>
                     </li>
                     <li>
-                        <a href="#research" class="scroll">Research</a>
+                        <a href="#research" class="scroll tracking" id="research-nav-link">Research</a>
                     </li>
                     <li>
-                        <a href="#cv" class="scroll">CV</a>
+                        <a href="#cv" class="scroll tracking" id="cv-nav-link">CV</a>
                     </li>
                     <li>
-                        <a href="#contact" class="scroll">Contact</a>
+                        <a href="#contact" class="scroll tracking" id="contact-nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -94,9 +96,6 @@
                 I completed my PhD in 2015 at the <a href="http://tism.msu.edu">Department of Media and Information at Michigan State University</a> studying under <a href="http://rickwash.net">Dr. Rick Wash</a>.
                 </p>
             </div>
-            <div class="row text-center">
-                <p>Last Updated: <span id="last-updated"></span></p>
-            </div>
         </div>
 
         <div class="buffer" id="research"></div>
@@ -115,7 +114,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/test_result_chi_poster_final.pdf" id="test-data-chi-lbw">
+                        <a href="papers/test_result_chi_poster_final.pdf" id="test-data-chi-lbw" class="tracking">
                         <img src="images/test-data-graphic.jpg"  />
                         <p class="text-center">Is This Good or Bad? Redesigning Visual Displays of Medical Test Results in Patient Portals to Provide Context and Meaning (CHI'16 Extended Abstracts)</a></p>
                     </div>
@@ -133,14 +132,14 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/customizing.pdf" id="heterogeneity">
+                        <a href="papers/customizing.pdf" id="heterogeneity" class="tracking">
                         <img src="images/hairball_p.png"  />
                         <p class="text-center">Heterogeneity in Customization of Recommender Systems By Users With Homogenous Preferences (CHI '16)</a></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/dissertation.pdf" id="dissertation">
+                        <a href="papers/dissertation.pdf" id="dissertation" class="tracking">
                         <img src="images/er_custom_only.png"  />
                         <p class="text-center">Decision Biases in Agreement with Intelligent Decision Aids (Dissertation)</a></p>
                     </div>
@@ -148,7 +147,7 @@
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/fantasy.pdf" id="fantasy">
+                        <a href="papers/fantasy.pdf" id="fantasy" class="tracking">
                         <img src="images/winner_agreement.png"  />
                         <p class="text-center">Customization Bias in Decision Support Systems (CHI '14)</a></p>
                     </div>
@@ -162,14 +161,14 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/spillover.pdf" id="spillover">
+                        <a href="papers/spillover.pdf" id="spillover" class="tracking">
                         <img src="images/superstar.png"  />
                         <p class="text-center">Highly Successful Projects Inhibit Coordination on Crowdfunding Sites (CHI '16)</a></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/timing.pdf" id="timing">
+                        <a href="papers/timing.pdf" id="timing" class="tracking">
                         <img src="images/timing.png"  />
                         <p class="text-center">Don't Wait! How Timing Affects Coordination of Crowdfunding Donations (CSCW '15)</a></p>
                     </div>
@@ -177,7 +176,7 @@
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/p38-wash.pdf" id="coordinate">
+                        <a href="papers/p38-wash.pdf" id="coordinate" class="tracking">
                         <img src="images/round_summary.png"  />
                         <p class="text-center">Coordinating Donors on Crowdfunding Sites (CSCW '14)</a></p>
                     </div>
@@ -194,7 +193,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/wikiprojects.pdf" id="wikiprojects">
+                        <a href="papers/wikiprojects.pdf" id="wikiprojects" class="tracking">
                         <img src="images/wikiprojects.png"  />
                         <p class="text-center"> Critical Mass of What? (ICWSM '14 paper)</p></a>
                         <p class="text-center">
@@ -204,7 +203,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/bootstrapping-paper-final.pdf" id="bootstrapping">
+                        <a href="papers/bootstrapping-paper-final.pdf" id="bootstrapping" class="tracking">
                         <img src="images/bootstrapping.png"  />
                         <p class="text-center">Bootstrapping Wikis (CSCW '12)</a></p>
                     </div>
@@ -219,14 +218,14 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/p1965-wohn.pdf" id="privacy">
+                        <a href="papers/p1965-wohn.pdf" id="privacy" class="tracking">
                         <img src="images/privacy.png"  />
                         <p class="text-center">Privacy Concerns Regarding Behavioral Advertising (CHI '15 Extended Abstracts)</a></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/source_orientation.pdf" id="source_orientation">
+                        <a href="papers/source_orientation.pdf" id="source_orientation" class="tracking">
                         <img src="images/source_distance.png"  />
                         <p class="text-center">Source Orientation (HFES '14)</a></p>
                     </div>
@@ -234,7 +233,7 @@
                 <div class="clearfix visible-sm-block"></div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/real_time_text-GROUP.pdf" id="rtt">
+                        <a href="papers/real_time_text-GROUP.pdf" id="rtt" class="tracking">
                         <img src="images/rtt_screenshot.jpg"  />
                         <p class="text-center">Real-Time Text and IM (GROUP '10)</a></p>
                     </div>
@@ -242,7 +241,7 @@
                 <div class="clearfix visible-md-block visible-lg-block"></div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
-                        <a href="papers/Digital Photo Kiosk Evaluation.pdf" id="photo">
+                        <a href="papers/Digital Photo Kiosk Evaluation.pdf" id="photo" class="tracking">
                         <img src="images/kiosk.png"  />
                         <p class="text-center">Digital Photo Kiosk Evaluation (HFES '07)</a></p>
                     </div>
@@ -263,8 +262,12 @@
             <h2 class="featurette-heading">Contact
             </h2>
             <p class="lead">I can be reached at jacobbs at umich dot edu.</p>
-            <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/jacobsolomon15" data-format="hover" data-related="false"></script>
+            <div>
+                <a href="https://linkedin.com/in/jacobsolomon15" class="btn btn-social-icon btn-lg btn-linkedin tracking" id="linkedin" title="LinkedIn profile"><span class='fa fa-linkedin'></span></a>
+                <a href="https://github.com/jacobsolomon15" class="btn btn-social-icon btn-lg btn-github tracking" id="github" title="Github Profile"><span class='fa fa-github'></span></a>
+            </div>
+            <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/jacobsolomon15" data-format="hover" data-related="false"></script> -->
         </div>
 
         <hr class="featurette-divider">
@@ -273,7 +276,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Jacob Solomon 2016</p>
+                    <p>Copyright &copy; Jacob Solomon 2016. Site last updated on <span id="last-updated"></span></p>
                 </div>
             </div>
         </footer>
@@ -299,62 +302,9 @@
         ga('create', 'UA-45476020-1', 'auto');
         ga('send', 'pageview');
 
-
-
-        $('#about').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'about-nav-click');
-        });
-
-        $('#research').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'research-nav-click');
-        });
-
-        $('#cv').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'cv-nav-click');
-        });
-
-        $('#contact').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'contact-nav-click');
-        });
-
-        $('#dissertation').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'dissertation-nav-click');
-        });
-
-        $('#fantasy').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'fantasy-nav-click');
-        });
-
-        $('#coordinate').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'coordinate-nav-click');
-        });
-
-        $('#timing').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'timing-nav-click');
-        });
-
-        $('#bootstrapping').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'bootstrapping-nav-click');
-        });
-
-        $('#wikiprojects').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'wikiprojects-nav-click');
-        });
-
-        $('#rtt').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'rtt-nav-click');
-        });
-
-        $('#photo').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'photo-nav-click');
-        });
-
-        $('#privacy').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'privacy-nav-click');
-        });
-
-        $('#cv_download').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'cv-nav-click');
+        $('.tracking').on('click', function(){
+            var el = $(this).attr('id') + "-click";
+            ga('send', 'event', 'button', 'click', el);
         });
     </script>
     <!-- Google Analytics scrolling tracking -->
@@ -365,7 +315,7 @@
             elements : [
                 "#research",
                 "#cv",
-                "contact"
+                "#contact"
             ],
             percentage: false,
             nonInteraction: false,
