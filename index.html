@@ -87,15 +87,55 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2 class="featurette-heading">About Me</h2>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img src="jacob-web.jpg" style="float: left; margin-right: 10px;" />
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">What I do ...</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li>
+                            Human-computer interaction & health informatics research
+                        </li>
+                        <li>
+                            Design, build and evaluate systems that aid decisions
+                        </li>
+                        <li>
+                            Study design of sociotechnical systems and their effect on individual and collective decision making
+                        </li>
+                        <li>
+                            Primarily quantitative research (Experiment design, large-scale data analysis)
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">My background ...</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li>
+                            Currently a Postdoc at the University of Michigan in the <a href="http://cbssm.med.umich.edu" target="_blank">Center for Bioethics and Social Sciences in Medicine</a> working with Brian Zikmund-Fisher
+                        </li>
+                        <li>
+                            Previously a PhD student at the <a href="http://bitlab.cas.msu.edu">BITLab</a> at Michigan State University where I worked with <a href="http://rickwash.com" target="_blank">Rick Wash.</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
                 <p class="lead">I study the ways that system designs, particularly intelligent systems and socio-technical systems, influence users' decision making and behavior.
                 I am currently a Postdoctoral Research Fellow at the <a href="http://cbssm.med.umich.edu">Center for Bioethics and Social Sciences in Medicine at the University of Michigan</a> working with Dr. Brian Zikmund-Fisher studying and designing decision aids for health and medical decisions.
                 I completed my PhD in 2015 at the <a href="http://tism.msu.edu">Department of Media and Information at Michigan State University</a> studying under <a href="http://rickwash.net">Dr. Rick Wash</a>.
                 </p>
-            </div>
+            </div> -->
         </div>
 
         <div class="buffer" id="research"></div>
@@ -103,15 +143,33 @@
 
         <!-- Second Featurette -->
         <div class="featurette">
-            <!--<img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">-->
-            <h2 class="featurette-heading">Research
-            </h2>
+            <h2 class="featurette-heading">Research</h2>
 
+            <h3>End-user programming and integration of health IT</h3>
+            <p class="lead">
+                People's health information is scattered across fragmented systems, making it hard to get the right info at the right place and time in order to make good health decisions. I am designing and studying a platform that emulates sites like <a href="http://ifttt.com" target="_blank">ifttt.com</a> and <a href="http://flow.microsoft.com" target="_blank">Microsoft Flow</a> (which currently have very little integration with health systems) to see whether this style of end-user-programmed integration of different systems and personal informatics automation can help people fill gaps in functionality and improve overall access and usability of health IT, and ultimately make better health decisions.
+            </p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/health_ifttt.png" />
+                        <p class="text-center">
+                            Screenshot of early version of this platform
+                        </p>
+                    </div>
+                </div>
+            </div>
             <h3>Medical Test Result Visualization</h3>
             <p class="lead">I currently work on an <a href="http://cbssm.med.umich.edu/what-we-do/research-projects/systematic-design-meaningful-presentations-medical-test-data-patients">AHRQ-funded grant</a>
-            to design meaningful presentations of medical test results to patients that can be displayed in online patient portals.</p>
+            to design meaningful visualizations of medical test results to patients that can be displayed in online patient portals. In addition to empirical studies evaluating these visualizations, we are developing a web application and javascript library to allow these visualizations to be integrated into patient portals (demos available soon!)</p>
 
             <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="images/soon.png"  />
+                        <p class="text-center">Graphics Help Patients Distinguish Between Urgent and Non-Urgent Deviations in Laboratory Test Results (JAMIA)</p>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="thumbnail">
                         <a href="papers/test_result_chi_poster_final.pdf" id="test-data-chi-lbw" class="tracking">
@@ -121,13 +179,24 @@
                 </div>
             </div>
 
-            <h3>Colonoscopy Screening Decision Aid</h3>
+            <h3>screeningdecision.com</h3>
             <p class="lead">Working with Dr. Sameer Saini at the Ann Arbor VA, I have designed and developed an online decision aid to help clinicians decide whether the benefits of a colonoscopy are worth the risks for a patient given some individual characteristics. This aid can help clinicians make more personalized decisions about screening and highlights some particular examples of patients whose risk and benefit from screening runs counterintuitively from established guidelines.</p>
-            <p>An alpha version of this tool can be seen at <a href="http://das.med.umich.edu/screening/screening.html" target="_blank">http://das.medu.umich.edu/screening/screening.html</a></p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="http://screeningdecision.com" id="screeningdecision" class="tracking">
+                        <img src="images/screeningdecision.png"  />
+                        <p class="text-center">screeningdecision.com</a></p>
+                    </div>
+                </div>
+            </div>
 
-            <h3>Intelligent Decision Aids</h3>
+            <h3>Intelligent Decision Aids and Tools for Data Science</h3>
             <p class="lead">My dissertation research looked at the ways that the design of intelligent decision aids (decision aids that use artificial intelligence or similarly sophisticated computation to make recommendations to decision makers) can create decision making biases.
             I found that the customizability of the system, the transparency, and users expectations of its efficacy can cause users to agree with system recommendations regardless of what recommendations are given.</p>
+            <p class="lead">
+                Going forward, I plan to extend this research to the design of tools for data science. How can we design tools that enable data scientists to both uncover important insights and make good decisions from data?
+            </p>
 
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -252,7 +321,7 @@
         <!-- Third Featurette -->
         <div class="featurette" id="cv">
             <h2 class="featurette-heading">CV</h2>
-            <p>You can download my cv <a href="cv/cv.pdf" id="cv_download">here.</a></p>
+            <p>You can download my cv <a href="cv/cv.pdf" id="cv_download" class="tracking">here.</a></p>
         </div>
 
         <hr class="featurette-divider">
