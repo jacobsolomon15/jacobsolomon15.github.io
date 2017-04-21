@@ -573,7 +573,7 @@
         ga('send', 'pageview');
 
         // send an event after one second to filter out bots from people who just come and leave
-        setTimeout(ga('send', 'event', 'pagestay', 'thispage'), 1000);
+        setTimeout("ga('send', 'event', 'pagestay', 'time on page more than 1s')", 1000);
 
         var started = Date.now();
 
