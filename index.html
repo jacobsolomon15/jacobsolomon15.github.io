@@ -585,7 +585,7 @@
 
         setInterval(pagestay, 5000);
 
-        function pagestay {
+        function pagestay() {
             var timestamp = (Date.now() - started) / 1000 | 0;
             console.log(timestamp);
             if (timestamp < 600) {
