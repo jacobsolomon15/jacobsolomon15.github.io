@@ -116,7 +116,7 @@
         </div>
         <div class="row">
             <h2 class="text-center">Projects</h2>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="idas">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Intelligent Systems and Decision Making</h4>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="ifttt">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Personal Automation and App Integrations</h4>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="screeningdecision">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Colorectal Cancer Screening</h4>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="testdata">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Lab Test Visualizations</h4>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="crowdfunding">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Crowdfunding Platform Design</h4>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="communities">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Online Communities</h4>
@@ -194,7 +194,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="oerca">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>OERca UX design and research</h4>
@@ -207,7 +207,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="privacy">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Privacy and Behavioral Advertising</h4>
@@ -220,7 +220,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="sourceorientation">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Source Orientation</h4>
@@ -233,7 +233,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="kiosk">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Self-service Kiosk Usability</h4>
@@ -246,7 +246,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="mtagger">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>MTagger Usability Evaluation</h4>
@@ -259,7 +259,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="umccc">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>UofM Comprehensive Cancer Center UX Evaluation</h4>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="onenote">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Microsoft One Note Evaluation</h4>
@@ -279,7 +279,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="suadio">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Suadio</h4>
@@ -289,7 +289,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="foodbuddha">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Food Buddha</h4>
@@ -298,7 +298,7 @@
                         </p>
                     </div>
                     <p>
-                        <a href="" class="btn btn-link tracking" id="foodbuddha-more">Project page <i class="fa fa-external-link"></i></a>
+                        <a href="https://sites.google.com/site/foodbuddhacorp/" class="btn btn-link tracking" id="foodbuddha-more">Project page <i class="fa fa-external-link"></i></a>
                     </p>
                 </div>
             </div>
@@ -573,7 +573,7 @@
         ga('send', 'pageview');
 
         // send an event after one second to filter out bots from people who just come and leave
-        setTimeout("ga('send', 'event', 'pagestay', 'time on page more than 1s')", 1000);
+        // setTimeout("ga('send', 'event', 'pagestay', 'time on page more than 1s')", 1000);
 
         var started = Date.now();
 
@@ -582,6 +582,16 @@
             var el = $(this).attr('id') + "-click-" + timestamp + "-seconds";
             ga('send', 'event', 'button', 'click', el);
         });
+
+        setInterval(pagestay(started), 5000);
+
+        function pagestay(started) {
+            var timestamp = (Date.now() - started) / 1000 | 0;
+            if timestamp < 600 {
+                ga('send', 'event', 'pagestay', timestamp, timestamp);
+            }
+        }
+
     </script>
     <!-- Google Analytics scrolling tracking -->
     <script src="js/jquery.scrolldepth.js"></script>
@@ -590,14 +600,20 @@
         jQuery.scrollDepth({
             elements : [
                 "#ifttt",
-                "#test-data",
+                "#testdata",
                 "#screeningdecision",
                 "#idas",
                 "#crowdfunding",
-                "#online-communities",
-                "#other",
-                "#cv",
-                "#contact"
+                "#communities",
+                "#oerca",
+                "#privacy",
+                "#sourceorientation",
+                "#kiosk",
+                "#mtagger",
+                "#umccc",
+                "#onenote",
+                "#suadio",
+                "#foodbuddha"
             ],
             percentage: false,
             nonInteraction: false,
