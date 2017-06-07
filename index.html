@@ -587,6 +587,7 @@
 
         function pagestay(started) {
             var timestamp = (Date.now() - started) / 1000 | 0;
+            console.log(timestamp);
             if (timestamp < 600) {
                 ga('send', 'event', 'pagestay', timestamp, timestamp);
             }
