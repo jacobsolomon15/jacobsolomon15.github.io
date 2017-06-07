@@ -583,9 +583,9 @@
             ga('send', 'event', 'button', 'click', el);
         });
 
-        setInterval(pagestay(started), 5000);
+        setInterval(pagestay, 5000);
 
-        function pagestay(started) {
+        function pagestay {
             var timestamp = (Date.now() - started) / 1000 | 0;
             console.log(timestamp);
             if (timestamp < 600) {
