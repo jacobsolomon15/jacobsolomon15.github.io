@@ -25,6 +25,18 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Begin Inspectlet JS Code -->
+<script type="text/javascript" id="inspectletjs">
+(function() {
+var insp_ab_loader = true; // set this boolean to false to disable the A/B testing loader
+window.__insp = window.__insp || [];
+__insp.push(['wid', 333020245]);
+var ldinsp = function(){
+if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=333020245&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);if(typeof insp_ab_loader != "undefined" && insp_ab_loader){ var adlt = function(){ var e = document.getElementById('insp_abl'); if(e){ e.parentNode.removeChild(e); __insp.push(['ab_timeout']); }}; var adlc = "body{ visibility: hidden !important; }"; var adln = typeof insp_ab_loader_t != "undefined" ? insp_ab_loader_t : 1200; insp.onerror = adlt; var abti = setTimeout(adlt, adln); window.__insp_abt = abti; var abl = document.createElement('style'); abl.id = "insp_abl"; abl.type = "text/css"; if(abl.styleSheet) abl.styleSheet.cssText = adlc; else abl.appendChild(document.createTextNode(adlc)); document.head.appendChild(abl); } };
+setTimeout(ldinsp, 0);
+})();
+</script>
+<!-- End Inspectlet JS Code -->
 
 </head>
 
@@ -42,17 +54,17 @@
         <div class="row">
             <div class="col-xs-12 col-lg-12 buffer-bottom">
                 <ul class="nav nav-pills nav-stacked">
-                    <li>
+                    <!-- <li>
                         <a href="cv/resume.pdf" id="resume_download" class="tracking">Resume</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="cv/cv.pdf" id="cv_download" class="tracking">Academic CV</a>
+                        <a href="cv/cv.pdf" id="cv_download" class="tracking">CV</a>
                     </li>
                     <li>
                         <a href="https://scholar.google.com/citations?user=uFSFpYMAAAAJ&hl=en" id="google-scholar" class="tracking">Google Scholar Profile</a>
                     </li>
                     <li>
-                        jacobbs [at] umich [dot] edu
+                        jacobsolomon15 [at] gmail [dot] com
                     </li>
                 </ul>
             </div>
@@ -74,7 +86,7 @@
                       <div class="panel-body">
                         <ul>
                             <li>
-                                Human-computer interaction & health informatics research
+                                Human factors research
                             </li>
                             <li>
                                 Design, build and evaluate systems that aid decisions
@@ -100,10 +112,10 @@
                       <div class="panel-body">
                         <ul>
                             <li>
-                                Currently a Postdoctoral Fellow at the University of Michigan in the <a href="http://cbssm.med.umich.edu" target="_blank">Center for Bioethics and Social Sciences in Medicine</a> working with Brian Zikmund-Fisher
+                                Currently a user experience researcher at <a href="https://aws.amazon.com.com">Amazon Web Services</a> focusing on Internet of Things cloud services.
                             </li>
                             <li>
-                                Previously a PhD student at the <a href="http://bitlab.cas.msu.edu">BITLab</a> at Michigan State University where I worked with <a href="http://rickwash.com" target="_blank">Rick Wash.</a>
+                                Previously a post-doc at the University of Michigan working with Brian Zikmund-Fisher and PhD student at the <a href="http://bitlab.cas.msu.edu">BITLab</a> at Michigan State University where I worked with <a href="http://rickwash.com" target="_blank">Rick Wash.</a>
                             </li>
                             <li>
                                 Master's degree in HCI (UX design and research) from University of Michigan School of Information and Bachelor's in human factors engineering from University of Utah Dept. of Psychology
@@ -116,7 +128,7 @@
         </div>
         <div class="row">
             <h2 class="text-center">Projects</h2>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="idas">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Intelligent Systems and Decision Making</h4>
@@ -129,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="ifttt">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Personal Automation and App Integrations</h4>
@@ -142,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="screeningdecision">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Colorectal Cancer Screening</h4>
@@ -155,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="testdata">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Lab Test Visualizations</h4>
@@ -168,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="crowdfunding">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Crowdfunding Platform Design</h4>
@@ -181,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="communities">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Online Communities</h4>
@@ -194,7 +206,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="oerca">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>OERca UX design and research</h4>
@@ -207,7 +219,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="privacy">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Privacy and Behavioral Advertising</h4>
@@ -220,7 +232,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="sourceorientation">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Source Orientation</h4>
@@ -233,7 +245,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="kiosk">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Self-service Kiosk Usability</h4>
@@ -246,7 +258,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="mtagger">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>MTagger Usability Evaluation</h4>
@@ -259,7 +271,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="umccc">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>UofM Comprehensive Cancer Center UX Evaluation</h4>
@@ -269,7 +281,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="onenote">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Microsoft One Note Evaluation</h4>
@@ -279,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="suadio">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Suadio</h4>
@@ -289,7 +301,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4" id="foodbuddha">
                 <div class="thumbnail">
                     <div class="caption">
                         <h4>Food Buddha</h4>
@@ -298,7 +310,7 @@
                         </p>
                     </div>
                     <p>
-                        <a href="" class="btn btn-link tracking" id="foodbuddha-more">Project page <i class="fa fa-external-link"></i></a>
+                        <a href="https://sites.google.com/site/foodbuddhacorp/" class="btn btn-link tracking" id="foodbuddha-more">Project page <i class="fa fa-external-link"></i></a>
                     </p>
                 </div>
             </div>
@@ -573,7 +585,7 @@
         ga('send', 'pageview');
 
         // send an event after one second to filter out bots from people who just come and leave
-        setTimeout("ga('send', 'event', 'pagestay', 'time on page more than 1s')", 1000);
+        // setTimeout("ga('send', 'event', 'pagestay', 'time on page more than 1s')", 1000);
 
         var started = Date.now();
 
@@ -582,6 +594,17 @@
             var el = $(this).attr('id') + "-click-" + timestamp + "-seconds";
             ga('send', 'event', 'button', 'click', el);
         });
+
+        setInterval(pagestay, 5000);
+
+        function pagestay() {
+            var timestamp = (Date.now() - started) / 1000 | 0;
+            var action = timestamp + "s on page";
+            if (timestamp < 600) {
+                ga('send', 'event', 'pagestay', action, timestamp);
+            }
+        }
+
     </script>
     <!-- Google Analytics scrolling tracking -->
     <script src="js/jquery.scrolldepth.js"></script>
@@ -590,14 +613,20 @@
         jQuery.scrollDepth({
             elements : [
                 "#ifttt",
-                "#test-data",
+                "#testdata",
                 "#screeningdecision",
                 "#idas",
                 "#crowdfunding",
-                "#online-communities",
-                "#other",
-                "#cv",
-                "#contact"
+                "#communities",
+                "#oerca",
+                "#privacy",
+                "#sourceorientation",
+                "#kiosk",
+                "#mtagger",
+                "#umccc",
+                "#onenote",
+                "#suadio",
+                "#foodbuddha"
             ],
             percentage: false,
             nonInteraction: false,
